@@ -1,0 +1,295 @@
+/* resetar configurações de página */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* configurações especificamente da background image usada no header */
+header {
+    background: url(clothingspill.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+@media (min-width: 768px) {
+    header {
+        height: 100vh;
+    }
+}
+
+/* configurações de navbar */
+
+.navbar {
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(254, 250, 241, 0.7);
+    background-size: 100vw 50vh;
+    opacity: (20%);
+    box-shadow: 0 5px 11px 0 rgba(50,50,50,.08);
+    height: 8vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar__ul {
+    display: flex;
+    color: #5A5B65;
+    align-items: center;
+    list-style: none;
+    height: 8vh;
+}
+
+@media (min-width: 768px) {
+    .navbar__ul {
+        justify-content: space-between;
+    }
+}
+
+
+
+.navbar__li-logo {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+    opacity: 0.8;
+    text-shadow: 2px 2px #A1A4AD;
+    color: #2B3441;
+    font-size: 5vh;
+    margin-left: 10px;
+}
+
+.navbar__li-menu {
+    display: none;
+    margin-right: 50px;
+}
+
+@media (min-width: 768px) {
+    .navbar__li-menu {
+      display: flex;
+    }
+  }
+
+.navbar__li-menu li {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bolder;
+    margin: 5px;
+    font-size: 2vh;
+}
+
+/* configurações do menu hamburguer da navbar */
+
+.navbar__menu-div {
+    opacity: (50%);
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 8vh;
+    width: 60px;
+    cursor: pointer;
+    box-shadow: 0 0 0 0px rgba(254, 250, 241, 0.7);
+    transition: box-shadow 0.5s .2s cubic-bezier(0.42, 0.96, 0.57, 1.07);
+}
+
+@media (min-width: 768px) {
+    .navbar__menu-div {
+        display: none;
+    }
+}
+
+.navbar__menu-div--aberto {
+    background: rgba(254, 250, 241, 0.7);
+    box-shadow: 0 0 0 200vw rgba(254, 250, 241, 0.7);
+    transition: box-shadow 1s cubic-bezier(0.42, 0.96, 0.57, 1.07);
+
+}
+
+.navbar__menu-hamb {
+    opacity: 0.8;
+    position: relative;
+    display: block;
+    background: #5F5F68;
+    width: 7vw;
+    height: 3px;
+    top: 4vh;
+    margin: 0 auto;
+    transition: .5s ease-in-out;
+}
+
+.navbar__menu-hamb:before,
+.navbar__menu-hamb:after {
+    background: #5F5F68;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: .5s ease-in-out;
+}
+
+.navbar__menu-hamb:before {
+    top: -10px;
+}
+
+.navbar__menu-hamb:after {
+    bottom: -10px;
+}
+
+.navbar__menu-hamb--aberto {
+    transform: rotate(45deg);
+}
+
+.navbar__menu-hamb--aberto:before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+.navbar__menu-hamb--aberto:after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+.navbar__menu-opcoes {
+    pointer-events: none;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    text-decoration: none;
+    list-style: none;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    transition: opacity 1s ease-in-out;
+
+}
+
+.navbar__menu-opcoes--aberto {
+    opacity: 1;
+    transition-delay: 0;
+    pointer-events: all;
+    transition: opacity 1s .2s ease-in-out;
+}
+
+.navbar__menu-opcoes li {
+    z-index: 2;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #747B8D;
+
+}
+
+.navbar__menu-opcoes a {
+    color: #2B3441;
+    display: block;
+    margin-bottom: 40px;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.navbar__menu-opcoes a:hover {
+    border-bottom: 4px solid #2B3441;
+}
+
+/* configurações do h1 de slogan */
+.header__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.header__slogan {
+    /* background-color: rgba(254, 250, 241, 0.3); */
+    background-color: rgba(77, 74, 82, 0.3);
+    box-shadow: 0 5px 11px 0 rgba(50,50,50,.08);
+    text-shadow: 2px 2px #2B3441;
+    text-align: center;
+    color: #FEFAF1;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    width: 100vw;
+}
+
+@media (min-width: 768px) {
+    .header__slogan {
+        width: 70vw;
+        font-size: 75px;
+        bottom: 105px;
+    }
+}
+
+.button {
+    border-radius: 500px;
+    padding: 12px 48px 14px;
+    margin-top: 25px;
+    min-width: 160px;
+    width: 300px;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: inherit;
+    font-weight: bolder;
+    font-size: .7em;
+
+    background: #FCF4E8;
+    box-shadow: 0 5px 11px 0 rgba(50,50,50,.08);
+
+    border-width: 2px;
+}
+
+.button__header {
+    opacity: 0.9;
+}
+
+/* body etc */
+body {
+    height: 200vh;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    color: #21181D;
+}
+
+
+/* seção de problematicas  e justificativas */
+.section__problematicas {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(254, 250, 241);
+}
+
+.section__problematicas p {
+    margin: 15px;
+}
+
+.section__problematicas h2 {
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 2px 2px #A1A4AD;
+    margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+    .section__problematicas {
+        flex-direction: row;
+    }
+    
+    .section__problematicas h1{
+        display: block;
+    }
+
+    .section__problematicas-topico {
+        flex-direction: column;
+    }
+}
+
+
+/* configurações da seção 2 */
+
+
