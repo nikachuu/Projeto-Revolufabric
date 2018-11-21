@@ -7,7 +7,7 @@
 
 /* configurações especificamente da background image usada no header */
 header {
-    background: url(clothingspill.jpg) no-repeat center center;
+    background: url(clothingspill2.png) no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
@@ -24,7 +24,7 @@ header {
 .navbar {
     position: fixed;
     z-index: 1;
-    background-color: rgba(254, 250, 241, 0.7);
+    background-color: rgb(254, 250, 241);
     background-size: 100vw 50vh;
     opacity: (20%);
     box-shadow: 0 5px 11px 0 rgba(50,50,50,.08);
@@ -48,12 +48,10 @@ header {
     }
 }
 
-
-
 .navbar__li-logo {
     font-family: 'Oswald', sans-serif;
-    font-weight: bolder;
-    opacity: 0.8;
+    /* font-weight: bold; */
+    letter-spacing: -2px;
     text-shadow: 2px 2px #A1A4AD;
     color: #2B3441;
     font-size: 5vh;
@@ -72,7 +70,7 @@ header {
   }
 
 .navbar__li-menu li {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: bolder;
     margin: 5px;
     font-size: 2vh;
@@ -207,13 +205,14 @@ header {
 
 .header__slogan {
     /* background-color: rgba(254, 250, 241, 0.3); */
-    background-color: rgba(77, 74, 82, 0.3);
-    box-shadow: 0 5px 11px 0 rgba(50,50,50,.08);
+    /* background-color: rgba(77, 74, 82, 0.3); */
+    /* box-shadow: 0 5px 11px 0 rgba(50,50,50,.08); */
     text-shadow: 2px 2px #2B3441;
     text-align: center;
     color: #FEFAF1;
     font-family: 'Oswald', sans-serif;
     font-size: 40px;
+    font-weight: normal;
     width: 100vw;
 }
 
@@ -257,39 +256,74 @@ body {
 }
 
 
-/* seção de problematicas  e justificativas */
-.section__problematicas {
+/* configurações das seções */
+.section {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: rgb(254, 250, 241);
 }
 
-.section__problematicas p {
+
+/* configurações de cor das seções */
+/* SEÇÃO BRANCA */
+.section__white {
+    background: rgb(254, 250, 241);
+}
+
+
+.section__topico-white p {
     margin: 15px;
 }
 
-.section__problematicas h2 {
+.section__topico-white h2 {
     font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
     text-shadow: 2px 2px #A1A4AD;
     margin-top: 10px;
 }
 
+.section__topico-white h2::first-letter {
+    border-bottom: 1px solid;
+}
+
+/* SEÇÃO AZUL */
+.section__blue {
+    background: #2B3441;
+    color: #FEFAF1;
+}
+
+.section__topico-blue p {
+    margin: 15px;
+}
+
+.section__topico-blue h2 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-shadow: 2px 2px #21181D;
+    margin-top: 10px;
+}
+
+.section__topico-blue h2::first-letter {
+    border-bottom: 1px solid;
+}
+
+/* CONFIGURAÇÕES DE POSICIONAMENTO DAS SEÇÕES */
+
 @media (min-width: 768px) {
-    .section__problematicas {
+    .section__white,
+    .section__blue {
         flex-direction: row;
     }
     
-    .section__problematicas h1{
+    .section__topico-white h1,
+    .section__topico-blue h1 {
         display: block;
     }
 
-    .section__problematicas-topico {
+    .section__topico-white,
+    .section__topico-blue {
         flex-direction: column;
     }
 }
-
-
-/* configurações da seção 2 */
-
-
