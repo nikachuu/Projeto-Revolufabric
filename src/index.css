@@ -257,7 +257,7 @@ body {
 
 
 /* configurações das seções */
-.section {
+.sec {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -266,16 +266,16 @@ body {
 
 /* configurações de cor das seções */
 /* SEÇÃO BRANCA */
-.section__white {
+.sec__mission {
     background: rgb(254, 250, 241);
 }
 
 
-.section__topico-white p {
+.sec__mission-topic p {
     margin: 15px;
 }
 
-.section__topico-white h2 {
+.sec__mission-topic h2 {
     font-family: 'Oswald', sans-serif;
     font-weight: normal;
     text-transform: uppercase;
@@ -283,21 +283,21 @@ body {
     margin-top: 10px;
 }
 
-.section__topico-white h2::first-letter {
+.sec__mission-topic h2::first-letter {
     border-bottom: 1px solid;
 }
 
 /* SEÇÃO AZUL */
-.section__blue {
+.sec__justif {
     background: #2B3441;
     color: #FEFAF1;
 }
 
-.section__topico-blue p {
+.section__justif-topics p {
     margin: 15px;
 }
 
-.section__topico-blue h2 {
+.section__justif-topics h2 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     font-weight: normal;
@@ -305,7 +305,7 @@ body {
     margin-top: 10px;
 }
 
-.section__topico-blue h2::first-letter {
+.section__justif-topics h2::first-letter {
     border-bottom: 1px solid;
 }
 
