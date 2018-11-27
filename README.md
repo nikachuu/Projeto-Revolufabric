@@ -11,5 +11,5 @@ Trata-se de uma ideia conjunta com minha amiga Camila Brazão Gomes para um star
 
 # Tecnologias a serem implementadas posteriormente
 - React
-- Redux
+- Redux (apenas para fins de fixação de conteúdo, pois trata-se de uma aplicação pequena e ela não necessariamente precisa da Store)
 - Backend (Node? DB? Não tenho certeza ainda)
