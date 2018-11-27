@@ -7,7 +7,7 @@
 
 /* configurações especificamente da background image usada no header */
 header {
-    background: url(clothingspill2.png) no-repeat center center;
+    background: url(clothingspill3.png) no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
@@ -24,22 +24,32 @@ header {
 .navbar {
     position: fixed;
     z-index: 1;
-    background-color: rgb(254, 250, 241);
     background-size: 100vw 50vh;
-    opacity: (20%);
-    box-shadow: 0 5px 11px 0 rgba(50,50,50,.08);
     height: 8vh;
     top: 0;
     left: 0;
     width: 100%;
+    transition: background-color 0.5s ease-out;
+}
+
+.navbar__scroll {
+    background-color: #F5F5FD;
+    box-shadow: 0 5px 11px 0 rgba(179,196,212,.08);
 }
 
 .navbar__ul {
     display: flex;
-    color: #5A5B65;
+    color: #D0D1E7;
+    text-shadow: 2px 2px #05072F;
     align-items: center;
     list-style: none;
     height: 8vh;
+}
+
+.navbar__ul-scroll {
+    color: #05072F;
+    text-shadow: 2px 2px #D0D1E7;
+    transition: 0.5s ease-out;
 }
 
 @media (min-width: 768px) {
@@ -48,14 +58,36 @@ header {
     }
 }
 
+.navbar__li-link {
+    text-decoration: none;
+    color: #D0D1E7;
+    text-shadow: 2px 2px #05072F;
+}
+
+.navbar__li-link-scroll {
+    color: #05072F;
+    text-shadow: 2px 2px #D0D1E7;
+    transition: 0.5s ease-out;
+
+}
+.navbar__logoimg {
+    margin-right: 5px;
+    height: 4vh;
+}
 .navbar__li-logo {
-    font-family: 'Oswald', sans-serif;
-    /* font-weight: bold; */
-    letter-spacing: -2px;
-    text-shadow: 2px 2px #A1A4AD;
-    color: #2B3441;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    letter-spacing: -4px;
+    text-shadow: 2px 2px #05072F;
+    color: #D0D1E7;
     font-size: 5vh;
     margin-left: 10px;
+    transition: 0.5s ease-out;
+}
+
+.navbar__li-logo-scroll {
+    color: #05072F;
+    text-shadow: 2px 2px #D0D1E7;
 }
 
 .navbar__li-menu {
@@ -99,7 +131,7 @@ header {
 
 .navbar__menu-div--aberto {
     background: rgba(254, 250, 241, 0.7);
-    box-shadow: 0 0 0 200vw rgba(254, 250, 241, 0.7);
+    box-shadow: 0 0 0 400vw rgba(254, 250, 241, 0.7);
     transition: box-shadow 1s cubic-bezier(0.42, 0.96, 0.57, 1.07);
 
 }
@@ -108,7 +140,7 @@ header {
     opacity: 0.8;
     position: relative;
     display: block;
-    background: #5F5F68;
+    background: #DC3E4A;
     width: 7vw;
     height: 3px;
     top: 4vh;
@@ -118,7 +150,7 @@ header {
 
 .navbar__menu-hamb:before,
 .navbar__menu-hamb:after {
-    background: #5F5F68;
+    background: #DC3E4A;
     content: "";
     display: block;
     width: 100%;
@@ -161,9 +193,8 @@ header {
     text-decoration: none;
     list-style: none;
     font-size: 50px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
     transition: opacity 1s ease-in-out;
-
 }
 
 .navbar__menu-opcoes--aberto {
@@ -188,8 +219,8 @@ header {
     z-index: 1;
 }
 
-.navbar__menu-opcoes a:hover {
-    border-bottom: 4px solid #2B3441;
+.navbar__menu-opcoes a:active {
+    border-bottom: 4px solid #DC3E4A;
 }
 
 /* configurações do h1 de slogan */
@@ -199,20 +230,19 @@ header {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 140px;
 }
 
 .header__slogan {
-    /* background-color: rgba(254, 250, 241, 0.3); */
-    /* background-color: rgba(77, 74, 82, 0.3); */
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    background-color: rgba(197, 185, 218, 0.3);
     /* box-shadow: 0 5px 11px 0 rgba(50,50,50,.08); */
-    text-shadow: 2px 2px #2B3441;
+    text-shadow: 2px 2px #05072F;
     text-align: center;
-    color: #FEFAF1;
-    font-family: 'Oswald', sans-serif;
+    color: #D0D1E7;
+    font-family: 'Raleway', sans-serif;
     font-size: 40px;
-    font-weight: normal;
+    font-weight: 800;
     width: 100vw;
 }
 
@@ -224,38 +254,47 @@ header {
     }
 }
 
-.button {
+.btn {
     border-radius: 500px;
-    padding: 12px 48px 14px;
+    padding: 10px;
     margin-top: 25px;
+    margin-bottom: 25px;
     min-width: 160px;
     width: 300px;
+    line-height: 20px;
 
     text-transform: uppercase;
+    text-align: center;
     letter-spacing: 1px;
     font-family: inherit;
     font-weight: bolder;
     font-size: .7em;
+    color: #E7E7F4;
+    text-shadow: 0 2px #05072F;
 
-    background: #FCF4E8;
+    background: #DC3E4A;
     box-shadow: 0 5px 11px 0 rgba(50,50,50,.08);
 
-    border-width: 2px;
+    border: none;
 }
 
-.button__header {
+.btn__header {
     opacity: 0.9;
 }
 
 /* body etc */
 body {
     height: 200vh;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 20px;
     color: #21181D;
 }
 
-
+.roundimg {
+    border-radius: 50%;
+    height: 25vh;
+    width: 25vh;
+}
 /* configurações das seções */
 .sec {
     display: flex;
@@ -267,7 +306,7 @@ body {
 /* configurações de cor das seções */
 /* SEÇÃO BRANCA */
 .sec__mission {
-    background: rgb(254, 250, 241);
+    background: #F5F5FD;
 }
 
 
