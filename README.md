@@ -6,8 +6,8 @@ Trata-se de uma ideia conjunta com minha amiga Camila Brazão Gomes para um star
 
 # Tecnologias utilizadas até agora
 - HTML
-- CSS
-- JavaScript (Vanilla)
+- Vanilla CSS
+- Vanilla JavaScript
 
 # Tecnologias a serem implementadas posteriormente
 - React
