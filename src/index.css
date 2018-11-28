@@ -383,6 +383,11 @@ body {
   border-bottom: 3px solid #DC3E4A;
 }
 
+@media only screen and (min-width: 768px){
+    .sec__mission {
+        height: 90vh;
+    }
+}
 /* SEÇÃO JUSTIFICATIVA */
 
 .sec__justif {
@@ -487,6 +492,10 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+    .sec__register {
+        height: 80vh;
+    }
+
     .sec__registerrow {
         flex-direction: row;
     }
@@ -515,7 +524,7 @@ body {
 @media only screen and (min-width: 768px) {
     .sec {
         width: 100%;
-        height: 70vh;
+        /* height: 100vh; */
         justify-content: center;
     }
 }
