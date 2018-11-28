@@ -33,6 +33,13 @@ header {
 }
 
 .navbar__scroll {
+    position: fixed;
+    z-index: 1;
+    background-size: 100vw 50vh;
+    height: 8vh;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: #F5F5FD;
     box-shadow: 0 5px 11px 0 rgba(179,196,212,.08);
 }
@@ -260,10 +267,11 @@ header {
 }
 
 .btn {
+    text-decoration: none; 
+
     border-radius: 500px;
     padding: 10px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin: 25px;
     min-width: 160px;
     width: 300px;
     line-height: 20px;
@@ -281,6 +289,14 @@ header {
     box-shadow: 0 5px 11px 0 rgba(50,50,50,.08);
 
     border: none;
+
+    transition: background-color 0.5s ease-out;
+}
+
+.btn:hover,
+.btn:active {
+    background: rgb(245, 103, 115);
+    color: rgb(251, 251, 255);
 }
 
 .btn__header {
@@ -295,11 +311,38 @@ body {
     color: #21181D;
 }
 
+.coral {
+    background: rgb(253, 158, 166);
+}
+
+@media only screen and (min-width: 768px) {
+    h2 {
+        font-size: 39px;
+    }
+
+    h3 {
+        font-size: 34px;
+    }
+}
+
 .roundimg {
     border-radius: 50%;
     height: 25vh;
     width: 25vh;
     margin: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+    .roundimg {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+.icons {
+    margin: 20px;
+    width: 120px;
+    height: 100px;
 }
 /* configurações das seções */
 .sec {
@@ -307,6 +350,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    
 }
 
 
@@ -315,16 +359,23 @@ body {
 .sec__mission {
   background: #F5F5FD;
 }
-
+@media only screen and (min-width: 768px) {
+    .sec__missionrow {
+        display: flex;
+        align-items: center;
+    }
+}
 
 .sec__mission-topic p {
   padding: 30px;
+
+  max-width: 600px;
 }
 
 .sec__mission-topic h2 {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  text-shadow: 2px 2px #A1A4AD;
+  text-shadow: 2px 2px #D0D1E7;
   margin: 20px;
 }
 
@@ -333,8 +384,10 @@ body {
 }
 
 /* SEÇÃO JUSTIFICATIVA */
+
 .sec__justif {
-  background: #2B3441;
+  background: url("95recycled.jpg");
+  background-size: cover;
   color: #FEFAF1;
 }
 
@@ -346,9 +399,8 @@ body {
 }
 
 .sec__justif h2 {
-  font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  text-shadow: 2px 2px #A1A4AD;
+  text-shadow: 2px 2px #21181D;
   margin: 30px;
 }
 
@@ -359,6 +411,9 @@ body {
 .sec__justif-topics p {
   margin: 15px;
   margin-bottom: 50px;
+  text-shadow: 2px 2px #21181D;
+
+  max-width: 400px;
 }
 
 
@@ -366,21 +421,20 @@ body {
 
 
 .sec__howitworks {
-  background: #ffffff;
+  background: #F5F5FD;
 }
 
 @media only screen and (min-width: 768px) {
-  .sec__howitworksrow {
+    .sec__howitworksrow {
     display: flex;
     flex-direction: row;
-  }
+    }
 }
 
 .sec__howitworks h2 {
-  font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  text-shadow: 2px 2px #A1A4AD;
-  margin: 30px;
+  text-shadow: 2px 2px #D0D1E7;
+  margin: 20px;
 }
 
 .sec__howitworks h2::first-letter {
@@ -388,6 +442,95 @@ body {
 }
 
 .sec__howitworks-topic p {
-  margin: 15px;
-  margin-bottom: 30px;
+    margin: 15px;
+    margin-bottom: 50px;
+
+    max-width: 400px;
+}
+
+/* SECTION: CADASTRO */
+
+.sec__register {
+    background: url("anotherclothingspill.png");
+    background-size: cover;
+    color: #FEFAF1;
+}
+
+.sec__register h2 {
+    font-weight: 700;
+    text-shadow: 2px 2px #21181D;
+    margin: 30px;
+}
+
+.sec__register h2::first-letter {
+    border-bottom: 3px solid #DC3E4A;
+}
+
+.sec__register h3 {
+    font-weight: 500;
+    text-shadow: 2px 2px #21181D;
+    margin: 30px;
+}
+
+.sec__register-topics p {
+    margin: 15px;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px #21181D;
+}
+
+.sec__registerrow {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* SECTION: MARCAS */
+
+.sec__brands {
+    background: #F5F5FD;
+}
+
+.sec__brands h2 {
+    font-weight: 700;
+    text-shadow: 2px 2px #D0D1E7;
+    margin: 20px;
+}
+
+  .sec__brands h2::first-letter {
+    border-bottom: 3px solid #DC3E4A;
+}
+
+
+/* CONFIGURAÇÃO DE TAMANHO DAS SEÇÕES EM DESKTOP */
+
+@media only screen and (min-width: 768px) {
+    .sec {
+        width: 100%;
+        height: 70vh;
+        justify-content: center;
+    }
+}
+
+/* FOOTER */
+
+footer {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+
+    font-size: 15px;
+
+    color: #F5F5FD;
+    background: #05072F;
+}
+
+footer a {
+    text-decoration: none;
+
+    color: #DC3E4A;
+    font-weight: 700;
+
+    border-bottom: 2px solid;
 }

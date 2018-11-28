@@ -2,19 +2,21 @@
 //lembrando que cada "tick" do botão 3 do mouse corresponde a scrollY = 100
 
 window.onscroll = () => {
+
     const nav = document.querySelector('.navbar');
     const logo = document.querySelector(".navbar__li-logo");
     const menu = document.getElementsByClassName("navbar__li-link");
 
     if ( window.screen.availHeight <= 700 && this.scrollY >= 600) {
-        nav.className += " navbar__scroll";
-        logo.className += " navbar__li-logo-scroll";
-        changeClassLoop(menu, " navbar__li-link-scroll");
+        nav.className = "navbar navbar__scroll";
+        logo.className = "navbar__li-logo navbar__li-logo-scroll";
+        changeClassLoop(menu, "navbar__li-link navbar__li-link-scroll");
+
 
     } else if ( this.scrollY >= 700 ){
-        nav.className += " navbar__scroll";
-        logo.className += " navbar__li-logo-scroll";
-        changeClassLoop(menu, " navbar__li-link-scroll");
+        nav.className = "navbar navbar__scroll";
+        logo.className = "navbar__li-logo navbar__li-logo-scroll";
+        changeClassLoop(menu, "navbar__li-link navbar__li-link-scroll");
 
     } else {
         nav.className = "navbar";
@@ -23,11 +25,12 @@ window.onscroll = () => {
     };
 };
 
+
 // função de mudança para array de elementos, no caso, elementos A
 
-function changeClassLoop(element, addedClass) {
+function changeClassLoop(element, previousClass, addedClass) {
     for ( i = 0; i < element.length; i++ ){
-        element[i].className += addedClass
+        element[i].className = `${previousClass} ${addedClass}`
     };
 };
 
@@ -69,5 +72,3 @@ function toggleNasClasses() {
 
 };
 
-
-db.todo.find({ $or: [{"titulo": { $in: [ "A" ] } }, { "descricao": { $in: ["es6", "bootstrap"] } }] }).pretty()
