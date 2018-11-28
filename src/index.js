@@ -68,3 +68,6 @@ function toggleNasClasses() {
     document.querySelector(".navbar__menu-opcoes").classList.toggle("navbar__menu-opcoes--aberto");
 
 };
+
+
+db.todo.find({ $or: [{"titulo": { $in: [ "A" ] } }, { "descricao": { $in: ["es6", "bootstrap"] } }] }).pretty()

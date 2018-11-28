@@ -299,75 +299,95 @@ body {
     border-radius: 50%;
     height: 25vh;
     width: 25vh;
+    margin: 25px;
 }
 /* configurações das seções */
 .sec {
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
 
 /* configurações de cor das seções */
-/* SEÇÃO BRANCA */
+/* SEÇÃO MISSION */
 .sec__mission {
-    background: #F5F5FD;
+  background: #F5F5FD;
 }
 
 
 .sec__mission-topic p {
-    margin: 15px;
+  padding: 30px;
 }
 
 .sec__mission-topic h2 {
-    font-family: 'Oswald', sans-serif;
-    font-weight: normal;
-    text-transform: uppercase;
-    text-shadow: 2px 2px #A1A4AD;
-    margin-top: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-shadow: 2px 2px #A1A4AD;
+  margin: 20px;
 }
 
 .sec__mission-topic h2::first-letter {
-    border-bottom: 1px solid;
+  border-bottom: 3px solid #DC3E4A;
 }
 
-/* SEÇÃO AZUL */
+/* SEÇÃO JUSTIFICATIVA */
 .sec__justif {
-    background: #2B3441;
-    color: #FEFAF1;
+  background: #2B3441;
+  color: #FEFAF1;
 }
 
-.section__justif-topics p {
-    margin: 15px;
+@media only screen and (min-width: 768px) {
+  .sec__justifrow {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
-.section__justif-topics h2 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    font-weight: normal;
-    text-shadow: 2px 2px #21181D;
-    margin-top: 10px;
+.sec__justif h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-shadow: 2px 2px #A1A4AD;
+  margin: 30px;
 }
 
-.section__justif-topics h2::first-letter {
-    border-bottom: 1px solid;
+.sec__justif h2::first-letter {
+  border-bottom: 3px solid #DC3E4A;
 }
 
-/* CONFIGURAÇÕES DE POSICIONAMENTO DAS SEÇÕES */
+.sec__justif-topics p {
+  margin: 15px;
+  margin-bottom: 50px;
+}
 
-@media (min-width: 768px) {
-    .section__white,
-    .section__blue {
-        flex-direction: row;
-    }
-    
-    .section__topico-white h1,
-    .section__topico-blue h1 {
-        display: block;
-    }
 
-    .section__topico-white,
-    .section__topico-blue {
-        flex-direction: column;
-    }
+/* SECTION HOW IT WORKS */
+
+
+.sec__howitworks {
+  background: #ffffff;
+}
+
+@media only screen and (min-width: 768px) {
+  .sec__howitworksrow {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.sec__howitworks h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-shadow: 2px 2px #A1A4AD;
+  margin: 30px;
+}
+
+.sec__howitworks h2::first-letter {
+  border-bottom: 3px solid #DC3E4A;
+}
+
+.sec__howitworks-topic p {
+  margin: 15px;
+  margin-bottom: 30px;
 }
