@@ -271,7 +271,7 @@ header {
 
     border-radius: 500px;
     padding: 10px;
-    margin: 25px;
+    margin: 15px;
     min-width: 160px;
     width: 300px;
     line-height: 20px;
@@ -350,7 +350,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    
+
 }
 
 
@@ -389,6 +389,7 @@ body {
   background: url("95recycled.jpg");
   background-size: cover;
   color: #FEFAF1;
+  padding-bottom: 50px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -454,6 +455,8 @@ body {
     background: url("anotherclothingspill.png");
     background-size: cover;
     color: #FEFAF1;
+
+    padding-bottom: 50px;
 }
 
 .sec__register h2 {
@@ -480,8 +483,15 @@ body {
 
 .sec__registerrow {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
+
+@media only screen and (min-width: 768px) {
+    .sec__registerrow {
+        flex-direction: row;
+    }
+}
+
 
 /* SECTION: MARCAS */
 
