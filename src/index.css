@@ -305,7 +305,7 @@ header {
 
 /* body etc */
 body {
-    height: 200vh;
+    height: 100vh;
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
     color: #21181D;
@@ -554,4 +554,46 @@ footer a {
     font-weight: 700;
 
     border-bottom: 2px solid;
+}
+
+/* FORMS */
+
+input {
+    border-radius: 25px;
+}
+
+.form__pf--container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100vh;
+}
+
+.form__pf {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background: rgba(245, 245, 253, 0.8);
+
+    width: 95vw;
+    height: 75vh;
+
+    border-radius: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+    .form__pf {
+        width: 50vw;
+    }
+}
+
+.form__pj {
+    visibility: hidden;
 }
