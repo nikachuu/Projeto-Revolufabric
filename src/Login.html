@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,800" rel="stylesheet">
   <link rel="stylesheet" href="./index.css">
   <title>Revolufabric</title>
 </head>
@@ -17,7 +18,7 @@
                     <li class="navbar__li"><a class="navbar__li-link" href="../public/index.html">Home</a></li>
                     <li class="navbar__li"><a class="navbar__li-link" href="#">Aprenda mais</a></li>
                     <li class="navbar__li"><a class="navbar__li-link" href="./Register.html">Cadastre-se</a></li>
-                    <li class="navbar__li"><a class="navbar__li-link" href="#">Login</a></li>
+                    <li class="navbar__li"><a class="navbar__li-link" href="./Login.html">Login</a></li>
                 </div>
             </ul>
             
@@ -30,21 +31,21 @@
                 <li><a class="navbar__menu-link" href="../public/index.html">Home</a></li>
                 <li><a class="navbar__menu-link" href="index.html">Aprenda mais</a></li>
                 <li><a class="navbar__menu-link" href="./Register.html">Cadastre-se</a></li>
-                <li><a class="navbar__menu-link" href="index.html">Login</a></li>
+                <li><a class="navbar__menu-link" href="./Login.html">Login</a></li>
             </ul>
         </nav>
 
-        <form class="form__pf--container">
-            <h2>Crie sua conta, é grátis! :)</h2> 
-          <div class="login">
-              <label for="nome">E-mail:</label>
-              <label for="nome">Senha:</label>
-              <input type="text">
-              <input type="submit" class="btn" value="Enviar"/>
+        <form class="form__login--container">
+            <h2>Bem-vindo! :)</h2>
+          <div class="form__login">
+              <label for="email">E-mail:</label>
+              <input type="email" name="email" placeholder="Digite o seu email">
+              <label for="senha">Senha:</label>
+              <input type="password" name="senha" placeholder="Digite a sua senha">
+              <input type="submit" class="btn" value="Fazer login"/>
           </div>
         </form>
-o9 m
-    </header>  
+    </header>
 
     <script src="../src/index.js"></script>
 </body>
