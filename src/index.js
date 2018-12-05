@@ -25,27 +25,6 @@ pegar informação que está no select
 1- se value="empresa", display do form__pj = "show" e do pf = "hidden"
 2- se value="cidadao", display do form__pf = "show" e do pj = "hidden"
 */
-const registerSelect = document.querySelector(".select__register");
-
-
-registerSelect.addEventListener("change", function(e) {
-    e.preventDefault();
-
-    const pfForm = document.querySelector(".form__pf");
-    const pjForm = document.querySelector(".form__pj");
-
-    if ( registerSelect.value === "cidadao" ) {
-        pfForm.classList.toggle("form__pf--hidden")
-        pjForm.classList.toggle("form__pj--hidden")
-
-    } else {
-        pjForm.classList.toggle("form__pj--hidden")
-        pfForm.classList.toggle("form__pf--hidden")
-
-    }
-})
-
-
 
 
 // função de mudança para array de elementos, no caso, elementos A
