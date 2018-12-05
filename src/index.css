@@ -309,11 +309,29 @@
     transition: background-color 0.5s ease-out;
 }
 
+.btn--disabled {
+
+    color: #05072F;
+    text-shadow:  0 2px lightgray;
+    background: lightgrey;
+    border: 1px solid #05072F;
+
+}
+
+
 .btn:hover,
 .btn:active {
     background: rgb(245, 103, 115);
     color: rgb(251, 251, 255);
 }
+
+.btn--disabled:hover,
+.btn--disabled:active {
+    color: #DC3E4A;
+    border: 1px solid #DC3E4A;
+    background: lightgrey;
+}
+
 
 .btn__header {
     opacity: 0.9;
