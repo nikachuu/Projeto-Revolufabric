@@ -51,8 +51,7 @@ document.querySelector(".navbar__menu-div").addEventListener("click", function(e
 const opcoesMenu = document.getElementsByClassName("navbar__menu-link");
 
 for ( i = 0; i < opcoesMenu.length; i++ ) {
-    opcoesMenu[i].addEventListener("click", function(e){
-        e.preventDefault();
+    opcoesMenu[i].addEventListener("click", function(){
         toggleNasClasses();
     });
 };
