@@ -638,6 +638,8 @@ input:focus {
     padding: 5px;
     border: 1px solid;
     border-radius: 5px;
+
+    margin: 20px;
 }
 
 .form__pf label,
@@ -687,20 +689,38 @@ input:focus {
 
 
     background: rgba(245, 245, 253, 0.9);
-    padding: 25px;
 
+    padding: 25px;
     width: 95vw;
     min-height: 80vh;
 
     border-radius: 10px;
 }
 
+.form__pf,
+.form__pj {
+    visibility: visible;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: center; 
+    flex-direction: column;
+
+    transition: visibility 0.5 linear;
+}
+
 .form__pj--hidden {
+    visibility: hidden;
     display: none;
+
+    transition: visibility 0.5 linear;
 }
 
 .form__pf--hidden {
+    visibility: hidden;
     display: none;
+    transition: visibility 0.5 linear;
 }
 
 .form__login {

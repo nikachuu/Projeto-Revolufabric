@@ -20,12 +20,6 @@ window.onscroll = () => {
 
 };
 
-/* função para forms de registro:
-pegar informação que está no select
-1- se value="empresa", display do form__pj = "show" e do pf = "hidden"
-2- se value="cidadao", display do form__pf = "show" e do pj = "hidden"
-*/
-
 
 // função de mudança para array de elementos, no caso, elementos A
 
