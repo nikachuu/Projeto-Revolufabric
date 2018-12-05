@@ -37,28 +37,54 @@
             </nav>
         </header>  
 
-        <form class="form__pf--container">
-            <h2>Crie sua conta, é grátis! :)</h2> 
-        <div class="form__pf">
-            <label for="nome">Nome:</label>
-            <input type="text" name="nome" placeholder="Digite o seu nome"><br/>
-            <label for="email">E-mail:</label>
-            <input type="email" name="email" placeholder="Digite o seu email"><br/>
-            <label for="endereco">Endereço:</label>
-            <input type="text" name="endereco" placeholder="Digite o seu endereço"><br/>
-            <label for="complemento">Complemento:</label>
-            <input type="text" name="complemento" placeholder="Digite os complementos ao seu endereço"><br/>
-            <label for="telefone">Telefone:</label>
-            <input type="tel" name="telefone" placeholder="Digite o seu telefone"><br/>
-            <label for="senha">Senha:</label>
-            <input type="password" name="senha" placeholder="Digite uma senha com no mínimo 6 caracteres">
-            <input type="submit" class="btn" value="Enviar"/>
+        <div class="form__container" name="register">
+
+            <h2>Crie sua conta, é grátis! :)</h2>
+            <div class="form__div">
+                <select name="register" class="select__register">
+                    <option value="" selected disabled hidden>O que você é?</option>
+                    <option value="empresa">Sou empresa</option>
+                    <option value="cidadao">Sou cidadão</option>
+                </select>
+
+                <form class="form__pf">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" placeholder="Digite o seu nome"><br/>
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" placeholder="Digite o seu email"><br/>
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" name="endereco" placeholder="Digite o seu endereço"><br/>
+                    <label for="complemento">Complemento:</label>
+                    <input type="text" name="complemento" placeholder="Digite os complementos ao seu endereço"><br/>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" name="telefone" placeholder="Digite o seu telefone"><br/>
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" placeholder="Digite uma senha com no mínimo 6 caracteres">
+                    <input type="submit" class="btn" value="Enviar"/>
+                </form>
+
+                <form class="form__pj">
+                    <label for="nome">Nome da empresa:</label>
+                    <input type="text" name="nome" placeholder="Digite o nome da empresa"><br/>
+                    <label for="nome">Seu nome completo:</label>
+                    <input type="text" name="nome" placeholder="Digite o seu nome"><br/>
+                    <label for="email">E-mail coorporativo:</label>
+                    <input type="email" name="email" placeholder="Digite o seu email coorporativo"><br/>
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" name="endereco" placeholder="Digite o seu endereço"><br/>
+                    <label for="complemento">Complemento:</label>
+                    <input type="text" name="complemento" placeholder="Digite os complementos ao seu endereço"><br/>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" name="telefone" placeholder="Digite o seu telefone"><br/>
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" placeholder="Digite uma senha com no mínimo 6 caracteres">
+                    <input type="submit" class="btn" value="Enviar"/>
+                </form>
+
+            </div>
         </div>
-        </form>
 
-        <form class="form__pj">
-
-        </form>
+            
     </section>
     <footer>
         <p>Copyright 2019 - Aline de Lima Santos</p>

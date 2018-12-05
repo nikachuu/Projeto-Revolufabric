@@ -630,6 +630,16 @@ input:focus {
     box-shadow: 0 0 10px #DC3E4A;
 }
 
+.select__register {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    background: none;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
 .form__pf label,
 .form__pj label,
 .form__login label {
@@ -643,9 +653,9 @@ input:focus {
     margin-bottom: 10px;
 }
 
-.form__pf--container,
-.form__pj--container,
-.form__login--container {
+.form__container,
+.form__container,
+.form__container {
     display: flex;
     align-items: center;
     align-content: center;
@@ -659,18 +669,16 @@ input:focus {
     min-height: 100vh;
 }
 
-.form__pf--container h2,
-.form__pj--container h2,
-.form__login--container h2 {
+.form__container h2,
+.form__container h2,
+.form__container h2 {
     margin: 30px;
     text-shadow: 2px 2px #05072F;
     text-align: center;
     color: #D0D1E7;
 }
 
-.form__pf,
-.form__pj,
-.form__login {
+.form__div {
     display: flex;
     align-items: center;
     align-content: center;
@@ -687,19 +695,21 @@ input:focus {
     border-radius: 10px;
 }
 
+.form__pj--hidden {
+    display: none;
+}
+
+.form__pf--hidden {
+    display: none;
+}
+
 .form__login {
     min-height: 50vh;
 }
 
 
 @media only screen and (min-width: 768px) {
-    .form__pf,
-    .form__pj,
-    .form__login {
+    .form__div {
         width: 50vw;
     }
-}
-
-.form__pj {
-    display: none;
 }
