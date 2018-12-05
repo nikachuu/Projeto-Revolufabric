@@ -9,43 +9,50 @@
   <title>Revolufabric</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <ul class="navbar__ul">
-                <li class="navbar__li-logo"><img src="../src/icon.png" class="navbar__logoimg" alt="Logotipo do Revolufabric">Revolufabric</li>
+    <section class="body__background">
+        <header>
+            <nav class="navbar">
+                <ul class="navbar__ul">
+                    <li class="navbar__li-logo"><img src="../src/icon.png" class="navbar__logoimg" alt="Logotipo do Revolufabric">Revolufabric</li>
 
-                <div class="navbar__li-menu">
-                    <li class="navbar__li"><a class="navbar__li-link" href="../public/index.html">Home</a></li>
-                    <li class="navbar__li"><a class="navbar__li-link" href="#">Aprenda mais</a></li>
-                    <li class="navbar__li"><a class="navbar__li-link" href="./Register.html">Cadastre-se</a></li>
-                    <li class="navbar__li"><a class="navbar__li-link" href="./Login.html">Login</a></li>
+                    <div class="navbar__li-menu">
+                        <li class="navbar__li"><a class="navbar__li-link" href="../public/index.html">Home</a></li>
+                        <li class="navbar__li"><a class="navbar__li-link" href="#">Aprenda mais</a></li>
+                        <li class="navbar__li"><a class="navbar__li-link" href="./Register.html">Cadastre-se</a></li>
+                        <li class="navbar__li"><a class="navbar__li-link" href="./Login.html">Login</a></li>
+                    </div>
+                </ul>
+                
+                <div class="navbar__menu-div">
+                    <span class="navbar__menu-hamb"></span>
                 </div>
-            </ul>
-            
-            <div class="navbar__menu-div">
-                <span class="navbar__menu-hamb"></span>
+
+
+                <ul class="navbar__menu-opcoes">
+                    <li><a class="navbar__menu-link" href="../public/index.html">Home</a></li>
+                    <li><a class="navbar__menu-link" href="index.html">Aprenda mais</a></li>
+                    <li><a class="navbar__menu-link" href="./Register.html">Cadastre-se</a></li>
+                    <li><a class="navbar__menu-link" href="./Login.html">Login</a></li>
+                </ul>
+            </nav>
+
+            <form class="form__login--container">
+                <h2>Bem-vindo! :)</h2>
+            <div class="form__login">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" placeholder="Digite o seu email">
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" placeholder="Digite a sua senha">
+                <input type="submit" class="btn" value="Fazer login"/>
             </div>
-
-
-            <ul class="navbar__menu-opcoes">
-                <li><a class="navbar__menu-link" href="../public/index.html">Home</a></li>
-                <li><a class="navbar__menu-link" href="index.html">Aprenda mais</a></li>
-                <li><a class="navbar__menu-link" href="./Register.html">Cadastre-se</a></li>
-                <li><a class="navbar__menu-link" href="./Login.html">Login</a></li>
-            </ul>
-        </nav>
-
-        <form class="form__login--container">
-            <h2>Bem-vindo! :)</h2>
-          <div class="form__login">
-              <label for="email">E-mail:</label>
-              <input type="email" name="email" placeholder="Digite o seu email">
-              <label for="senha">Senha:</label>
-              <input type="password" name="senha" placeholder="Digite a sua senha">
-              <input type="submit" class="btn" value="Fazer login"/>
-          </div>
-        </form>
-    </header>
+            </form>
+        </header>
+    </section>
+    
+    <footer>
+        <p>Copyright 2019 - Aline de Lima Santos</p>
+        <p>Photos: <a href="https://www.savers.com/" target="_blank" alt="Savers">Savers</a>, Rethink Reuse Earth Day Installation, 2016</p>
+    </footer>
 
     <script src="../src/index.js"></script>
 </body>

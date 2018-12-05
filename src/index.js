@@ -7,13 +7,13 @@ window.onscroll = () => {
     const logo = document.querySelector(".navbar__li-logo");
     const menu = document.getElementsByClassName("navbar__li-link");
 
-    if ( window.screen.availHeight <= 700 && this.scrollY >= 600) {
+    if ( window.screen.availHeight <= 700 && this.scrollY >= 50 ) {
         nav.className = "navbar navbar__scroll";
         logo.className = "navbar__li-logo navbar__li-logo-scroll";
         changeClassLoop(menu, "navbar__li-link navbar__li-link-scroll");
 
 
-    } else if ( this.scrollY >= 700 ){
+    } else if ( this.scrollY >= 50 ){
         nav.className = "navbar navbar__scroll";
         logo.className = "navbar__li-logo navbar__li-logo-scroll";
         changeClassLoop(menu, "navbar__li-link navbar__li-link-scroll");
