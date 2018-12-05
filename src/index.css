@@ -699,28 +699,17 @@ input:focus {
 
 .form__pf,
 .form__pj {
-    visibility: visible;
     display: flex;
     width: 100%;
     align-items: center;
     align-content: center;
-    justify-content: center; 
+    justify-content: center;
     flex-direction: column;
-
-    transition: visibility 0.5 linear;
 }
 
-.form__pj--hidden {
-    visibility: hidden;
+.form__pj--hidden,
+.form__pf--hidden  {
     display: none;
-
-    transition: visibility 0.5 linear;
-}
-
-.form__pf--hidden {
-    visibility: hidden;
-    display: none;
-    transition: visibility 0.5 linear;
 }
 
 .form__login {
