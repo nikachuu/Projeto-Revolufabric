@@ -341,8 +341,10 @@
 body {
     height: 100vh;
     font-family: 'Raleway', sans-serif!important;
-    font-size: 20px;
+    font-size: 18px;
     color: #21181D;
+
+    /* overflow-x: hidden; */
 }
 
 .main__a {
@@ -492,16 +494,62 @@ body {
   margin: 20px;
 }
 
+.sec__howitworks p {
+    margin: 15px;
+
+    max-width: 400px;
+}
+
+.sec__howitworks-topic p {
+    margin-bottom: 30px;
+}
+
 .sec__howitworks h2::first-letter {
   border-bottom: 3px solid #DC3E4A;
 }
 
-.sec__howitworks-topic p {
-    margin: 15px;
-    margin-bottom: 50px;
 
-    max-width: 400px;
+/*SECTION: PRODUTOS */
+.sec__products {
+    display: flex;
+    flex-direction: column;
 }
+
+@media only screen and (min-width: 768px) {
+    .sec__products {
+    flex-direction: row;
+    }
+}
+
+.sec__products img {
+    border-radius: 5px;
+    height: 150px;
+    margin: 25px;
+}
+
+.product {
+    padding: 20px;
+    background: #D0D1E7;
+
+    box-shadow: 0 5px 11px 0 rgba(179,196,212, 0.4);
+    border-radius: 5px;
+    margin: 15px;
+    margin-bottom: 40px;
+    
+    border-top: 1.5px solid #F5F5FD;
+    border-left: 1.5px solid #F5F5FD;
+    border-right: 1.5px solid rgba(179,196,212, 0.6);
+    border-bottom: 1.5px solid rgba(179,196,212, 0.6);
+    
+}
+
+.product p {
+    text-shadow: 2px 2px rgb(184, 186, 214);
+    font-weight: 500;
+    padding: 0;
+}
+
+
 
 /* SECTION: CADASTRO */
 
@@ -613,12 +661,14 @@ footer {
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 150px;
+    min-height: 150px;
 
     font-size: 15px;
 
     color: #F5F5FD;
     background: #05072F;
+
+    padding-top: 20px;
 }
 
 footer a {
@@ -628,6 +678,22 @@ footer a {
     font-weight: 700;
 
     border-bottom: 2px solid;
+}
+
+.socials {
+    display: flex;
+}
+
+.socials img {
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 32px;
+    height: 32px;
+}
+
+.socials a {
+    border-bottom: none;
 }
 
 /* FORMS */
