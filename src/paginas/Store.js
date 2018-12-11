@@ -36,9 +36,9 @@ document.querySelectorAll(".filterData").forEach(clickedFilter => {
 })
 
 
-function retrievedProductTypeValue(){
+function retrieveProductKeys(){
     for (i = 0; i < products["items"].length; i++) {
-        console.log(products["items"][i]["product"])
+        return products["items"][i]["product"]
     }
 }
 
