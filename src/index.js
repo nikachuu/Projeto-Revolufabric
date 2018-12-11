@@ -66,3 +66,15 @@ function toggleNasClasses() {
 
 };
 
+/* smooth scrolling quando clicar em ancoras da home 
+seleciona todos os elementos hRef, e pra cada um, coloca o comportamento de scroll como Smooth */
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});

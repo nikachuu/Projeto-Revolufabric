@@ -1,6 +1,5 @@
 window.onload = () => {
     showProducts();
-    console.log(getProducts())
 };
 
 function getProducts(){
@@ -23,3 +22,24 @@ function showProducts(){
             </div>
             `).join("")}`
   };
+
+
+
+document.querySelectorAll(".filterData").forEach(clickedFilter => {
+    clickedFilter.addEventListener("click", function(e){
+        e.preventDefault();
+
+        if ( clickedFilter.innerText === "Poliéster" ) {
+            console.log("cliquei kkkk")
+        }
+    })
+})
+
+
+function retrievedProductTypeValue(){
+    for (i = 0; i < products["items"].length; i++) {
+        console.log(products["items"][i]["product"])
+    }
+}
+
+

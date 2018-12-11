@@ -9,7 +9,7 @@
   <title>Revolufabric</title>
 </head>
 <body>
-    <section class="body__background">
+    <section id="storePageTop">
         <header>
             <nav class="navbar__noscroll">
                 <ul class="navbar__ul">
@@ -40,22 +40,35 @@
     <main class="store__wrapper">
         <section class="store__aside">
             <h3>Tipos de tecido</h3>
-
-            <a href="#">Poliéster</a>
-            <a href="#">Nylon</a>
-            <a href="#">Algodão</a>
+            <div class="store__filter">
+                <a href="#">Poliéster</a>
+                <a href="#">Nylon</a>
+                <a href="#">Algodão</a>
+            </div>
         </section>
         <section class="store__mobilemenu">
-            <h3>Filtrar</h3>
-
-            <a href="#">Poliéster</a>
-            <a href="#">Nylon</a>
-            <a href="#">Algodão</a>
+            <div class="store__dropdown--toggle">
+                <h3>Tipos de tecido</h3>
+            </div>
+            <div class="store__mobilefilter">
+                <a class="filterData">Poliéster</a>
+                <a class="filterData">Nylon</a>
+                <a class="filterData">Algodão</a>
+            </div>
         </section>
-        <section id="products" class="store__products">
-            <!-- Produtos inseridos através do JavaScript -->
+        <section class="store__products--wraper">
+            <div id="products" class="store__products">
+                <!-- Produtos inseridos através do JavaScript -->
+            </div>
+            <div id="backToTop" class="store__backtotop">
+                <div class="store__backtotop--btn">
+                    <a href="#storePageTop">Voltar para o topo</a>
+                </div>
+            </div>
         </section>
     </main>
+
+    
 
     <footer>
         <p>Created, designed and coded by Aline de Lima Santos - 2019</p>
