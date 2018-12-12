@@ -23,23 +23,66 @@ function showProducts(){
             `).join("")}`
   };
 
-
-
 document.querySelectorAll(".filterData").forEach(clickedFilter => {
     clickedFilter.addEventListener("click", function(e){
         e.preventDefault();
 
         if ( clickedFilter.innerText === "Poliéster" ) {
-            console.log("cliquei kkkk")
+            document.getElementById("products").innerHTML = `
+                ${filterProducts("pol").map((product) => `
+                    <div class="product">
+                        <img src="${product["image"]}"/>
+                        <p>
+                            ${product["name"]} <br/>
+                            ${Number(product["price"]["value"]).toLocaleString("pt-br", { minimumFractionDigits: 2, style: "currency", currency: "BRL" })}
+                            ${product["price"]["sampleSize"]}
+                        </p>
+                    </div> 
+                `).join("")}`
+        }
+
+        if ( clickedFilter.innerText === "Nylon" ) {
+            document.getElementById("products").innerHTML = `
+            ${filterProducts("nyl").map((product) => `
+                <div class="product">
+                    <img src="${product["image"]}"/>
+                    <p>
+                        ${product["name"]} <br/>
+                        ${Number(product["price"]["value"]).toLocaleString("pt-br", { minimumFractionDigits: 2, style: "currency", currency: "BRL" })}
+                        ${product["price"]["sampleSize"]}
+                    </p>
+                </div> 
+            `).join("")}`
+        }
+
+        if ( clickedFilter.innerText === "Algodão" ) {
+            document.getElementById("products").innerHTML = `
+            ${filterProducts("cot").map((product) => `
+                <div class="product">
+                    <img src="${product["image"]}"/>
+                    <p>
+                        ${product["name"]} <br/>
+                        ${Number(product["price"]["value"]).toLocaleString("pt-br", { minimumFractionDigits: 2, style: "currency", currency: "BRL" })}
+                        ${product["price"]["sampleSize"]}
+                    </p>
+                </div> 
+            `).join("")}`
+        }
+
+        if ( clickedFilter.innerText === "Todos os tipos") {
+            showProducts();
         }
     })
 })
 
-
 function retrieveProductKeys(){
+    let productsArr = [];
     for (i = 0; i < products["items"].length; i++) {
-        return products["items"][i]["product"]
-    }
+        productsArr.push(products["items"][i]["product"]);
+    };
+    return productsArr;
+};
+
+function filterProducts(specificValue) {
+    return retrieveProductKeys().filter(product => product["productType"] === specificValue) 
 }
-
-

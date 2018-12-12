@@ -391,6 +391,8 @@ body {
     font-size: 16px;
     font-weight: 500;
     color: #21181D;
+
+    overflow-x: hidden;
 }
 
 .main__a {
@@ -574,7 +576,7 @@ body {
     box-shadow: 0 5px 11px 0 rgba(179,196,212, 0.4);
     border-radius: 5px;
 
-    min-width: 100%;
+    min-width: 320px;
 
     margin-bottom: 10px;
     
@@ -905,8 +907,6 @@ input::placeholder{
         min-width: 100%;
         min-height: 100vh;
         text-align: left;
-
-        margin-top: 60px;
     }
 }
 .store__aside {
@@ -923,8 +923,7 @@ input::placeholder{
 
     .store__filter a {
         text-decoration: none;
-
-
+        
         font-weight: 500;
         color: #21181D;
         border-bottom: 1px solid;
@@ -934,6 +933,7 @@ input::placeholder{
 
     .store__filter a:hover{
         color: #DC3E4A;
+        cursor: pointer;
     }
 }
 
