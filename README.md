@@ -14,6 +14,7 @@ Posteriormente, será inserido um banco de dados onde o usuário poderá ver dis
 - HTML5
 - Vanilla CSS3
 - Vanilla JavaScript
+- Um pouquinho de JQuery, para fazer um slider
 
 # Tecnologias a serem implementadas posteriormente
 - React
