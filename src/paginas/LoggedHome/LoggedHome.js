@@ -1,6 +1,7 @@
-document.querySelector(".logout").addEventListener("click", function() {
+document.querySelectorAll(".logout").forEach((btn) => {
+    btn.addEventListener("click", function() {
     localStorage.removeItem("login");
-})
+})})
 
 window.onload = () => {
     showUser();
