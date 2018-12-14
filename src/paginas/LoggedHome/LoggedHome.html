@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="../../index.css">
+  <title>Revolufabric</title>
+</head>
+<body>
+    <section class="body__background">
+        <header>
+            <nav class="navbar">
+                <ul class="navbar__ul">
+                    <li class="navbar__li-logo"><img src="../../componentes/img/icon.png" class="navbar__logoimg" alt="Logotipo do Revolufabric">Revolufabric</li>
+
+                    <div class="navbar__li-menu">
+                        <li class="navbar__li"><a class="navbar__li-link" href="../../../public/index.html">Home</a></li>
+                        <li class="navbar__li"><a class="navbar__li-link" href="../Store/Store.html">Loja</a></li>
+                        <li class="navbar__li"><a class="navbar__li-link" href="../Register/Register.html">Cadastre-se</a></li>
+                        <li class="navbar__li"><a class="logout navbar__li-link" href="../../../public/index.html">Sair</a></li>
+                    </div>
+                </ul>
+                
+                <div class="navbar__menu-div">
+                    <span class="navbar__menu-hamb"></span>
+                </div>
+
+
+                <ul class="navbar__menu-opcoes">
+                    <li><a class="navbar__menu-link" href="../../../public/index.html">Home</a></li>
+                    <li><a class="navbar__menu-link" href="../Store/Store.html">Loja</a></li>
+                    <li><a class="navbar__menu-link" href="../Register/Register.html">Cadastre-se</a></li>
+                    <li><a class="logout navbar__menu-link" href="../../../public/index.html">Sair</a></li>
+                </ul>
+            </nav>
+        </header>  
+
+        <main class="logged__container">
+            <section class="logged__div">
+                <div id="user" class="logged__info">
+
+                    <a href="#" class="btn">Alterar dados</a>
+                </div>
+                
+                <section class="logged__donation">
+                    <h2>Quero doar!</h2>
+                    <a href="#" class="btn">Agendar retirada</a>
+
+                    <div class="donations--wrapper">
+                        <h3>Doações anteriores</h3>
+                        <p id="donations"></p>
+                    </div>
+
+                </section>
+                
+                <section class="logged__store">
+                    <h2>Quero comprar!</h2>
+                    <a href="../Store/Store.html" class="btn">Acessar loja</a>
+
+                    <div class="purchases--wrapper">
+                        <h3>Compras anteriores</h3>
+                        <p id="purchases"></p>
+                    </div>
+                    
+                </section>
+            </section>
+        </main>
+    </section>
+    <footer>
+        <p>Created, designed and coded by Aline de Lima Santos - 2019</p>
+        <p>Photos:
+            <a href="https://www.savers.com/" target="_blank" alt="Savers">Savers</a>, <a href="https://www.savers.com/" target="_blank" alt="Vivify Textiles">Vivify Textiles</a></p><br/>
+        <p>The previous work by no means intends to make a profit. It's sole purpose is to show the creator's programming skills - and, in the process, educate people regarding textile chain environmental impact.</p>
+        
+        <div class="socials">
+            <a href="https://www.facebook.com/profile.php?id=100000136370281" target="_blank" alt="My facebook profile"><img src="../../componentes/img/facebook-logo.png"></a>
+            <a href="https://github.com/nikachuu" target="_blank" alt="My GitHub profile and codes"><img src="../../componentes/img/github-logo.png"></a>
+            <a href="https://www.linkedin.com/in/aline-santos-8781a1168/" target="_blank" alt="My LinkedIn profile"><img src="../../componentes/img/linkedin-logo.png"></a>
+        </div>
+    </footer>
+
+    <script src="../../index.js"></script>
+    <script src="../data/registered.js"></script>
+    <script src="../../../src/componentes/functions/onscrollNavbar.js"></script>
+    <script src="./LoggedHome.js"></script>
+</body>
+</html>

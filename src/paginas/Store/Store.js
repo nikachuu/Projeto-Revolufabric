@@ -84,5 +84,5 @@ function retrieveProductKeys(){
 };
 
 function filterProducts(specificValue) {
-    return retrieveProductKeys().filter(product => product["productType"] === specificValue) 
+    return retrieveProductKeys().filter(product => product["productType"] === specificValue)
 }

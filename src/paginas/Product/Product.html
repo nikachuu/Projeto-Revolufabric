@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="../index.css">
+  <title>Revolufabric</title>
+</head>
+<body>
+    <section class="body__background">
+        <header>
+            <nav class="navbar">
+                <ul class="navbar__ul">
+                    <li class="navbar__li-logo"><img src="../componentes/icon.png" class="navbar__logoimg" alt="Logotipo do Revolufabric">Revolufabric</li>
+
+                    <div class="navbar__li-menu">
+                        <li class="navbar__li"><a class="navbar__li-link" href="../../public/index.html">Home</a></li>
+                        <li class="navbar__li"><a class="navbar__li-link" href="./Store.html">Loja</a></li>
+                        <li class="navbar__li"><a class="navbar__li-link" href="./Register.html">Cadastre-se</a></li>
+                        <li class="navbar__li"><a class="navbar__li-link" href="./Login.html">Login</a></li>
+                    </div>
+                </ul>
+                
+                <div class="navbar__menu-div">
+                    <span class="navbar__menu-hamb"></span>
+                </div>
+
+
+                <ul class="navbar__menu-opcoes">
+                    <li><a class="navbar__menu-link" href="../../public/index.html">Home</a></li>
+                    <li><a class="navbar__menu-link" href="./Store.html">Loja</a></li>
+                    <li><a class="navbar__menu-link" href="./Register.html">Cadastre-se</a></li>
+                    <li><a class="navbar__menu-link" href="./Login.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>  
+
+        <div class="form__container" name="register">
+
+            <h2>Crie sua conta, é grátis! :)</h2>
+            <div class="form__div">
+                <select name="register" class="select__register">
+                    <option value="empresa">Sou empresa</option>
+                    <option value="cidadao">Sou cidadão</option>
+                </select>
+
+                <form class="form__pf">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" placeholder="Digite o seu nome completo"><br/>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" placeholder="Digite o seu email"><br/>
+                    <label for="endereco">Endereço</label>
+                    <input type="text" name="endereco" placeholder="Digite o seu endereço"><br/>
+                    <label for="complemento">Complemento</label>
+                    <input type="text" name="complemento" placeholder="Digite os complementos ao seu endereço"><br/>
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" name="telefone" placeholder="Digite o seu telefone"><br/>
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" placeholder="Digite uma senha com no mínimo 6 caracteres">
+                    <input type="submit" class="btn btn--form btn--disabled" value="Enviar"/>
+                </form>
+
+                <form class="form__pj">
+                    <label for="nome">Nome da empresa</label>
+                    <input type="text" name="nome" placeholder="Digite o nome da empresa"><br/>
+                    <label for="nome">Seu nome completo</label>
+                    <input type="text" name="nome" placeholder="Digite o seu nome"><br/>
+                    <label for="email">E-mail coorporativo</label>
+                    <input type="email" name="email" placeholder="Digite o seu email coorporativo"><br/>
+                    <label for="endereco">Endereço</label>
+                    <input type="text" name="endereco" placeholder="Digite o seu endereço"><br/>
+                    <label for="complemento">Complemento</label>
+                    <input type="text" name="complemento" placeholder="Digite os complementos ao seu endereço"><br/>
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" name="telefone" placeholder="Digite o seu telefone"><br/>
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" placeholder="Digite uma senha com no mínimo 6 caracteres">
+                    <input id="registerFormBtn" type="submit" class="btn btn--form btn--disabled" value="Enviar"/>
+                    <p class="erro"></p>
+                </form>
+
+            </div>
+        </div>
+
+            
+    </section>
+    <footer>
+        <p>Created, designed and coded by Aline de Lima Santos - 2019</p>
+        <p>Photos:
+            <a href="https://www.savers.com/" target="_blank" alt="Savers">Savers</a>, <a href="https://www.savers.com/" target="_blank" alt="Vivify Textiles">Vivify Textiles</a></p><br/>
+        <p>The previous work by no means intends to make a profit. It's sole purpose is to show the creator's programming skills - and, in the process, educate people regarding textile chain environmental impact.</p>
+        
+        <div class="socials">
+            <a href="https://www.facebook.com/profile.php?id=100000136370281" target="_blank" alt="My facebook profile"><img src="../componentes/facebook-logo.png"></a>
+            <a href="https://github.com/nikachuu" target="_blank" alt="My GitHub profile and codes"><img src="../componentes/github-logo.png"></a>
+            <a href="https://www.linkedin.com/in/aline-santos-8781a1168/" target="_blank" alt="My LinkedIn profile"><img src="../componentes/linkedin-logo.png"></a>
+        </div>
+    </footer>
+
+    <script src="../index.js"></script>
+    <script src="./Register.js"></script>
+</body>
+</html>

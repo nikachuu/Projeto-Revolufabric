@@ -5,22 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Raleway:500,700,800" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../src/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.8.8/tiny-slider.css">
+    <link rel="stylesheet" type="text/css" href="../src/componentes/Slick/slick/slick.css"/>
     <title>Revolufabric</title>
 </head>
 <body>
     <header class="header__home">
         <nav class="navbar">
             <ul class="navbar__ul">
-                <li class="navbar__li-logo"><img src="../src/componentes/icon.png" class="navbar__logoimg" alt="Logotipo do Revolufabric">Revolufabric</li>
+                <li class="navbar__li-logo"><img src="../src/componentes/img/icon.png" class="navbar__logoimg" alt="Logotipo do Revolufabric">Revolufabric</li>
 
                 <div class="navbar__li-menu">
                     <li class="navbar__li"><a class="navbar__li-link" href="./index.html">Home</a></li>
-                    <li class="navbar__li"><a class="navbar__li-link" href="#">Aprenda mais</a></li>
+                    <li class="navbar__li"><a class="navbar__li-link" href="../src/paginas/Store/Store.html">Loja</a></li>
                     <li class="navbar__li"><a class="navbar__li-link" href="#registerSection">Cadastre-se</a></li>
-                    <li class="navbar__li"><a class="navbar__li-link" href="../src/paginas/Login.html">Login</a></li>
+                    <li class="navbar__li"><a class="navbar__li-link" href="../src/paginas/Login/Login.html">Login</a></li>
                 </div>
             </ul>
             
@@ -31,9 +30,9 @@
 
             <ul class="navbar__menu-opcoes">
                 <li><a class="navbar__menu-link" href="./index.html">Home</a></li>
-                <li><a class="navbar__menu-link" href="index.html">Aprenda mais</a></li>
+                <li><a class="navbar__menu-link" href="../src/paginas/Store/Store.html">Loja</a></li>
                 <li><a class="navbar__menu-link" href="#register">Cadastre-se</a></li>
-                <li><a class="navbar__menu-link" href="../src/paginas/Login.html">Login</a></li>
+                <li><a class="navbar__menu-link" href="../src/paginas/Login/Login.html">Login</a></li>
             </ul>
         </nav>
         <div class="header__content">
@@ -51,7 +50,7 @@
                         A Revolufabric quer incentivar <span class="coral">modelos circulares e restaurativos</span> de produção na industria fashion. O modelo atual de produção finaliza no ato da compra e quando as roupas são eventualmente descartadas, em sua grande maioria em aterro sanitário, elas passam a ser desprovidas de valor. Para nós, roupa descartada é matéria-prima valiosa! Pretendemos desse modo incentivar a logística reversa de artigos de vestuário, que alimenta nossa produção de fibras recicladas.
                     </p>
 
-                    <img class="roundimg" src="../src/componentes/rethinkreuse.png" alt="Repense e reuse">
+                    <img class="roundimg" src="../src/componentes/img/rethinkreuse.png" alt="Repense e reuse">
                 </div>
 
             </div>
@@ -87,19 +86,19 @@
             <div class="sec__howitworksrow">
               <div class="sec__howitworks-topic">
                   <p>
-                    <img class="icons" src="../src/componentes/icon-donation.png" alt="Doação"/><br>
+                    <img class="icons" src="../src/componentes/img/icon-donation.png" alt="Doação"/><br>
                     Receberemos, seja por meio de retirada agendada em sua residência, nossos pontos oficiais de coleta ou entrega na nossa filial, <span class="coral">qualquer roupa ou pedaço de tecido que você esteja querendo abrir mão</span>, evitando assim que esse tecido possa eventualmente parar em aterro sanitario e ficar indisponível como matéria prima a ser utilizada!
                   </p>
               </div>
               <div class="sec__howitworks-topic">
                   <p>
-                    <img class="icons" src="../src/componentes/icon-newfabric.png" alt="Novo tecido"/><br>
+                    <img class="icons" src="../src/componentes/img/icon-newfabric.png" alt="Novo tecido"/><br>
                     A sua roupa será processada pelo nosso maquinário. Os fios desconexos da roupa desfibrilada passarão por uma transformação, que entrelaça os fios soltos, <span class="coral">transformando em fios novos!</span> Esses fios são transformados em tecido reciclado, a fonte de sustento de nossa ideia.
                   </p>
               </div>
               <div class="sec__howitworks-topic">
                   <p>
-                    <img class="icons" src="../src/componentes/icon-recycled.png" alt="Tecido reciclado"/><br>
+                    <img class="icons" src="../src/componentes/img/icon-recycled.png" alt="Tecido reciclado"/><br>
                     Através de nossa plataforma, seja você pessoa física ou juridica, será possível comprar o tecido reciclado <span class="coral">feito à preço mínimo para manter a produção e fortalecer a ideia e, no processo, além das suas doações resultarem em descontos com as empresas parceiras</span>, você poderá adquirir roupas que além de legais, são sustentáveis! \o/
                   </p>
               </div>
@@ -107,22 +106,23 @@
 
             <h2>Alguns de nossos produtos</h2>
             <p>Para ver a loja completa, é só se cadastrar! =)</p>
-            <div class="sec__products">
-                <div class="product">
-                    <img src="../src/componentes/recycled_polyester.jpg">
-                    <p>Poliéster Reciclado<br/>R$ 0,00/m </p>
-                </div>
+                <div class="product__carousel">
 
-                <div class="product">
-                    <img src="../src/componentes/recycled_nylon.jpg">
-                    <p>Nylon Reciclado<br/>R$ 0,00/m </p>
-                </div>
+                    <div class="product carousel--margin">
+                        <img src="../src/componentes/img/recycled_polyester.jpg">
+                        <p>Poliéster Reciclado<br/>R$ 0,00/m </p>
+                    </div>
 
-                <div class="product">
-                    <img src="../src/componentes/recycled_cotton.jpg">
-                    <p>Algodão Reciclado<br/>R$ 0,00/m </p>
+                    <div class="product carousel--margin">
+                        <img src="../src/componentes/img/recycled_nylon.jpg">
+                        <p>Nylon Reciclado<br/>R$ 0,00/m </p>
+                    </div>
+
+                    <div class="product carousel--margin">
+                        <img src="../src/componentes/img/recycled_cotton.jpg">
+                        <p>Algodão Reciclado<br/>R$ 0,00/m </p>
+                    </div>
                 </div>
-            </div>
         </section>
 
         <section id="registerSection" class="sec sec__register">
@@ -130,19 +130,19 @@
             <h3>Cadastre-se agora e comece a mudar o mundo!</h3>
 
             <div class="sec__registerrow">
-                <a id="cidadao" class="btn" value="cidadao" href="../src/paginas/Register.html">Sou um cidadão de bem :)</a>
-                <a id="empresa" class="btn btn__final" value="empresa" href="../src/paginas/Register.html">Sou uma empresa de bem :)</a>
+                <a id="cidadao" class="btn" value="cidadao" href="../src/paginas/Register/Register.html">Sou um cidadão de bem :)</a>
+                <a id="empresa" class="btn btn__final" value="empresa" href="../src/paginas/Register/Register.html">Sou uma empresa de bem :)</a>
             </div>
         </section>
         <section class="sec sec__brands">
             <h2>Marcas que apoiam essa ideia</h2>
             <p>Seja através de nossa iniciativa ou através de seus projetos pessoais, essas marcas também apoiam a renovação da industria fashion</p>
             <div class="sec__brands-logos">
-                <img class="brands__logos" src="../src/componentes/CEA_logo.png" alt="C&A">
-                <img class="brands__logos" src="../src/componentes/levis_logo.png" alt="Levis">
-                <img class="brands__logos" src="../src/componentes/malwee_logo.png" alt="Malwee">
-                <img class="brands__logos" src="../src/componentes/youcom_logo.png" alt="Youcom">
-                <img class="brands__logos" src="../src/componentes/renner_logo.png" alt="Renner">
+                <img class="brands__logos" src="../src/componentes/img/CEA_logo.png" alt="C&A">
+                <img class="brands__logos" src="../src/componentes/img/levis_logo.png" alt="Levis">
+                <img class="brands__logos" src="../src/componentes/img/malwee_logo.png" alt="Malwee">
+                <img class="brands__logos" src="../src/componentes/img/youcom_logo.png" alt="Youcom">
+                <img class="brands__logos" src="../src/componentes/img/renner_logo.png" alt="Renner">
             </div>
         </section>
         <footer>
@@ -152,14 +152,23 @@
             <p>The previous work by no means intends to make a profit. It's sole purpose is to show the creator's programming skills - and, in the process, educate people regarding textile chain environmental impact.</p>
             
             <div class="socials">
-                <a href="https://www.facebook.com/profile.php?id=100000136370281" target="_blank" alt="My facebook profile"><img src="../src/componentes/facebook-logo.png"></a>
-                <a href="https://github.com/nikachuu" target="_blank" alt="My GitHub profile and codes"><img src="../src/componentes/github-logo.png"></a>
-                <a href="https://www.linkedin.com/in/aline-santos-8781a1168/" target="_blank" alt="My LinkedIn profile"><img src="../src/componentes/linkedin-logo.png"></a>
+                <a href="https://www.facebook.com/profile.php?id=100000136370281" target="_blank" alt="My facebook profile"><img src="../src/componentes/img/facebook-logo.png"></a>
+                <a href="https://github.com/nikachuu" target="_blank" alt="My GitHub profile and codes"><img src="../src/componentes/img/github-logo.png"></a>
+                <a href="https://www.linkedin.com/in/aline-santos-8781a1168/" target="_blank" alt="My LinkedIn profile"><img src="../src/componentes/img/linkedin-logo.png"></a>
             </div>
         </footer>
     </main>
 
     <script src="../src/index.js"></script>
-    <script src="../src/index_saveBtnValue.js"></script>
+    <script src="../src/componentes/functions/saveBtnValue.js"></script>
+    <script src="../src/componentes/functions/onscrollNavbar.js"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="../src/componentes/Slick/slick/slick.min.js"></script>
+    <script type="text/javascript" src="../src/componentes/Slick/slickconfig.js"></script>
+    
 </body>
 </html>

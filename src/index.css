@@ -8,7 +8,7 @@
 
 /* configurações especificamente da background image usada no header */
 .header__home {
-    background: url(./componentes/clothingspill3.png) no-repeat center center;
+    background: url(./componentes/img/clothingspill3.png) no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
@@ -402,7 +402,7 @@ body {
 }
 
 .body__background {
-    background: url(./componentes/clothingspill3.png);
+    background: url(./componentes/img/clothingspill3.png);
     background-size: cover;
 }
 
@@ -481,7 +481,7 @@ body {
 /* SEÇÃO JUSTIFICATIVA */
 
 .sec__justif {
-  background: url("./componentes/95recycled.jpg");
+  background: url("./componentes/img/95recycled.jpg");
   background-size: cover;
   color: #FEFAF1;
   padding-bottom: 50px;
@@ -563,6 +563,8 @@ body {
 }
 
 .product {
+    max-width: 293px;
+
     padding: 20px;
     background: #D0D1E7;
 
@@ -576,8 +578,23 @@ body {
     border-right: 1.5px solid rgba(179,196,212, 0.6);
     border-bottom: 1.5px solid rgba(179,196,212, 0.6);
 
-    align-self: flex-start; /*evita que o elemento queira crescer e ocupar 100% do height do elemento pai */
+    align-self: flex-start; /*evita que o elemento queira crescer e ocupar 100% do height do elemento pai*/
+
 }
+
+.product__carousel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 310px;
+}
+
+.carousel--margin {
+    margin: 10px;
+}
+
+
 
 @media only screen and (min-width: 768px) {
     .product {
@@ -606,7 +623,7 @@ body {
 /* SECTION: CADASTRO */
 
 .sec__register {
-    background: url("./componentes/anotherclothingspill.png");
+    background: url("./componentes/img/anotherclothingspill.png");
     background-size: cover;
     color: #FEFAF1;
 
@@ -862,11 +879,16 @@ input::placeholder{
 
 .form__pj--hidden,
 .form__pf--hidden  {
+    visibility: hidden;
     display: none;
 }
 
 .form__login {
     min-height: 50vh;
+}
+
+.erro {
+    color: red;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1041,4 +1063,118 @@ input::placeholder{
     font-weight: 700;
 
     border-bottom: 2px solid;
+}
+
+
+.logged__container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    width: 100%;
+    min-height: 100vh;
+
+}
+
+.logged__div {
+    margin-top: 50px;
+
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+    background: rgba(255, 255, 255, 0.9);
+
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid rgba(179,196,212, 0.6);
+    border-right: 2px solid rgba(179,196,212, 0.6);
+
+
+    width: 98%;
+    min-height: 100vh;
+
+    border-radius: 10px;
+}
+
+.logged__div h2,
+.logged__div h3 {
+    text-shadow: 2px 2px #D0D1E7;
+}
+
+.logged__div .btn {
+    margin: 20px;
+}
+
+
+.logged__info,
+.logged__donation,
+.logged__store {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    height: 100%;
+
+    margin: 10px;
+
+    border-radius: 10px;
+    background: rgb(252, 221, 223);
+    border-top: 1.5px solid #F5F5FD;
+    border-left: 1.5px solid #F5F5FD;
+    border-right: 1.5px solid rgba(179,196,212, 0.6);
+    border-bottom: 1.5px solid rgba(179,196,212, 0.6);
+    padding: 20px;
+}
+
+.userdata {
+    margin: 20px;
+    text-align: center;
+}
+
+.logged__img {
+    max-width: 120px;
+    max-height: 120px;
+}
+
+.logged__donation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.donations--wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 40px;
+}
+
+#donations {
+    padding: 20px;
+}
+
+.logged__store {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.purchases--wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 40px;
+}
+#purchases {
+    padding: 20px;
 }
