@@ -20,3 +20,5 @@ Posteriormente, será inserido um banco de dados onde o usuário poderá ver dis
 - React
 - Redux (apenas para fins de fixação de conteúdo, pois trata-se de uma aplicação pequena e ela não necessariamente precisa da Store)
 - Backend (Node? DB? Não tenho certeza ainda)
+
+https://nikachuu.github.io/Revolufabric/public/index.html
