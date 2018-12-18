@@ -1,6 +1,6 @@
 # Sobre o projeto
-https://nikachuu.github.io/Revolufabric/public/index.html
-para fazer Login: lorem@ipsum.com, senha loremipsum (apenas cadastros armazenados no semi Json são validos)
+Hospedagem: https://nikachuu.github.io/Revolufabric/public/index.html<br>
+Para fazer Login: email: lorem@ipsum.com, senha: loremipsum (apenas cadastros armazenados no semi Json são validos)
 
 Projeto realizado para o curso de FullStack da {reprograma}, com o intuito de fixar conceitos de CSS, JavaScript puro e, posteriormente, React, Redux e BackEnd.
 
